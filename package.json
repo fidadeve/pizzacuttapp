@@ -2,5 +2,36 @@
   "name": "pizzacut",
   "version": "1.0.0",
   "private": true,
-  "description": "PizzaCut — all-in-one pizza ordering and delivery application (storefront, admin dashboard and rider portal in one deployable app).",
-  ... (truncated for brevity, full content in next commit)
+  "description": "PizzaCut — all-in-one pizza ordering and delivery application.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "db:server": "node scripts/local-db-server.mjs",
+    "db:seed": "node scripts/seed.mjs",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "^0.3.10",
+    "@supabase/supabase-js": "^2.57.4",
+    "bcryptjs": "^3.0.2",
+    "drizzle-orm": "^0.44.5",
+    "nanoid": "^5.1.5",
+    "next": "^15.5.3",
+    "postgres": "^3.4.7",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "zod": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "drizzle-kit": "^0.31.4",
+    "dotenv": "^17.2.2",
+    "typescript": "^5.9.2"
+  }
+}
