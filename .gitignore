@@ -1,0 +1,1 @@
+node_modules/\n.next/\nout/\nbuild/\ncoverage/\n\n# local persistent database (dev/test only)\n.data/\n*.sqlite\n*.sqlite-*\n\n# logs\n.logs/\n*.log\nnpm-debug.log*\n\n# secrets / local env (keep the template)\n.env\n.env.local\n.env.*.local\n.vercel\n\n# misc\n.DS_Store\n*.tsbuildinfo\nnext-env.d.ts\n
