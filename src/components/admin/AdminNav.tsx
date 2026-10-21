@@ -44,7 +44,7 @@ export function AdminNav({ user }: { user: { name: string; email: string | null 
         >
           ☰
         </button>
-        <Logo size={34} wordmark={false} />
+        <Logo size={34} />
         <span className="font-display text-lg">Admin</span>
         <Link href="/" className="btn btn-ghost btn-xs ml-auto">
           View store ↗
