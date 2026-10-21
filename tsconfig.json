@@ -2,11 +2,13 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "lib": ["ES2022"],
+    "lib": ["ES2022", "DOM"],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": { "@/*": ["./src/*"] }
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "\*.test.ts", "\*.spec.ts"]
+  "include": ["src", "next-env.d.ts"],
+  "exclude": ["node_modules", "*.test.ts", "*.spec.ts"]
 }
