@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { getCart } from '@/lib/cart';
+import { addCartItem, getCart } from '@/lib/cart';
 
-export async function GET(req: NextRequest) {
+export async function GET(_req: NextRequest) {
   const cart = await getCart();
   return NextResponse.json(cart);
 }
