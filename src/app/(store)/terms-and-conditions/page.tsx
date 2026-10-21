@@ -1,12 +1,10 @@
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
-import { useState } from 'react'
+import Link from 'next/link';
 
-export function TermsAndConditionsPage() {
-  return (
-    <div className="min-h-screen bg-surface">
-      <main className="lg:pl-64">
-        <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-          <h1 className="text-4xl font-bold text-brand mb-6">
-            Terms & Conditions
-          </h1>
+export default function TermsAndConditionsPage() {
+  return <main style={{ maxWidth: 760, margin: '0 auto', padding: '36px 20px', lineHeight: 1.7 }}>
+    <Link href="/">← Home</Link>
+    <h1>Terms &amp; Conditions</h1>
+    <p>This is a temporary test page for PizzaCut. By using this preview, you understand that features and content may be incomplete and test orders should not be treated as real purchases.</p>
+    <p>No payment should be submitted through this preview. Any sample information entered should be considered test data.</p>
+  </main>;
+}
