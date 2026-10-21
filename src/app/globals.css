@@ -1,0 +1,8 @@
+/**
+ * Global CSS styles for the PizzaCut application.
+ *
+ * Tailwind directives and custom styles.
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
