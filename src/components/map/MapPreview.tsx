@@ -1,5 +1,5 @@
 /**
- * Map preview component for the PizzaCut application.
+ * Map preview component.
  *
  * Displays a preview of the delivery map.
  */
